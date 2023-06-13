@@ -12,7 +12,7 @@ body{
 .header{
     min-height: 110vh;
     width: 100%;
-    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.2)),url(images/CN2.png);
+    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.2)),url(CN2.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -249,7 +249,7 @@ nav img {
 .header2{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(2,7,28,0.4),rgba(2,7,28,0.4)),url(images/CS3.jpg);
+    background-image: linear-gradient(rgba(2,7,28,0.4),rgba(2,7,28,0.4)),url(CS3.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -393,7 +393,7 @@ nav img {
 .p5{
     height: 125vh;
     width: 100%;
-    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.2)),url(images/v7.png);
+    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.2)),url(v7.png);
     background-position: center;
     background-size: cover;
     position: relative;
