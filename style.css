@@ -387,7 +387,7 @@ nav img {
 }
 .content3{
     position: relative;
-    width: 1250px;
+    width: 1150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,7 +396,7 @@ nav img {
     position: relative;
     left:-20%;
     top:75px;
-    width: 1250px;
+    width: 1150px;
     height: 400px;
 }
 .content3 .image3 img{
