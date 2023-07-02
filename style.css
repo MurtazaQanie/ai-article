@@ -394,7 +394,7 @@ nav img {
 }
 .content3 .image3{
     position: relative;
-    left:-20%;
+    left:-35%;
     top:75px;
     width: 1150px;
     height: 400px;
@@ -507,7 +507,7 @@ nav img {
 .media{
     list-style: none;
     display: flex;
-    margin: 1rem 0 3rem 0;
+    margin: 0rem 0 0rem 0;
     align-items: left;
     justify-content: left;
     position: relative;
