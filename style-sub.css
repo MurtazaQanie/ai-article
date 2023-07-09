@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Nexa';
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.4)),url(Q3.png);
+    background-size: cover;
+    background-position: center;}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    }
+nav img {
+    width: 75px;
+    position: absolute;
+    top: 45px;
+    left: 110px;
+
+}
+.nav-links .fa-solid{
+    display: none;
+}    
+.nav-links {
+    flex: 1;
+    text-align: right;
+    position:absolute;
+    top: 6%;
+    left: 66%;
+    transition: left 0.4s ease-in-out;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 7px;
+    position: relative;    
+}
+.nav-links ul li a{
+    font-family: 'Noir', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13.5px;    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #DADBDD;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.menu-icon{
+    color: white;
+    top: 5%;
+    position: absolute;
+    right: 10%;
+    font-size: 1.7em;
+    z-index: 111;
+    display: none;
+}
+.menu{
+    display: none;
+    position: relative;
+    top: 3%;
+    left: 49%;
+    width: 200px;
+    height: 0;
+    align-content: center;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menu.open{
+    height: 180px;
+}
+.menu li{
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.menu li a{
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.text-box{
+    align-items: center;
+    position: absolute;
+    font-family: 'Nexa';
+    top:35%;
+    left: 35%;
+    
+}
+.text-box p{
+    font-size: 52px;
+    color: white;
+}
+.text-box p2{
+    color:white;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Nexa';
+}
+.box{
+    position: absolute;
+    width: 550px;
+    height: 200px;
+    background: transparent;
+    top: 48%;
+    left: 29%;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h{
+    color:white;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+    left: 30%;
+}
+.box-input1{
+    position: relative;
+    left: -85px;
+    top: 40px;
+    margin: 30px 0;
+    width: 200px;
+    border-bottom: 1px solid white;
+}
+.box-input1 input{
+    width: 110%;
+    height: 30px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.box-input1 ion-icon{
+    position: absolute;
+    right:8px;
+    color:white;
+    font-size: 1.2em;
+    top:5px;
+}
+
+.box-input2{
+    position: relative;
+    left: 180px;
+    top: -21px;
+    margin: 30px 0;
+    width: 200px;
+    border-bottom: 1px solid white;
+}
+.box-input2 input{
+    width: 110%;
+    height: 30px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.box-input2 ion-icon{
+    position: absolute;
+    right:8px;
+    color:white;
+    font-size: 1.2em;
+    top:5px;
+}
+
+.box-input3{
+    position: relative;
+    left: -32%;
+    top: 0px;
+    margin: 30px 0;
+    width: 280px;
+    border-bottom: 1px solid white;
+}
+
+.box-input3 input{
+    width: 100%;
+    height: 30px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.box-input3 ion-icon{
+    position: absolute;
+    right:8px;
+    color:white;
+    font-size: 1.2em;
+    top:5px;
+}
+button{
+    width: 55%;
+    height: 48px;
+    border-radius: 5px;
+    background:transparent;
+    color:white;
+    border: 1px solid white;
+    position: relative;
+    top: -70px;
+    left: 225px;
+    outline:none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500px;
+}
+button:hover{
+    border: 1px solid #DADBDD;
+    background: #DADBDD;
+    transition: 0.8s;
+    color: black;
+}
+@media screen and (350px <= width <= 400px){
+    section{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        }
+    nav img {
+        width: 45px;
+        position: absolute;
+        top: 45px;
+        left: 40px;
+    }    
+    .nav-links {
+        display: none;
+    }
+    .menu{
+        color:white;
+        list-style: none;
+        display: none;
+        position: absolute;
+        height: 50vh;
+        width: 250px;
+        z-index: 1;
+    }
+    .menu li a{
+        padding:10px;
+        font-size: 20px;
+    }
+    .nav-links .fa-solid{
+        display: block;
+    }
+    .text-box{
+        font-family: 'Nexa';
+        top:30%;
+        left: 60px;
+        
+    }
+    .text-box p{
+        font-size: 30px;
+        left: -20px;
+
+    }
+    .text-box p2{
+        font-size: 11px;
+        left: -23px;
+    }
+    .box{
+        position: relative;
+        width: 240px;
+        height: 165px;
+        top: 2%;
+        left: -7%;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .box-input1{
+        position: relative;
+        left: 0px;
+        top: 14px;
+        width: 200px;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input1 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input1 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    .box-input2{
+        position: relative;
+        left: 0px;
+        top: -5px;
+        width: 200px;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input2 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input2 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    .box-input3{
+        position: relative;
+        left: 0px;
+        top: -25px;
+        width: 200px;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input3 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input3 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    button{
+        width: 100%;
+        height: 30px;
+        border: 0.5px solid white;
+        position: relative;
+        top: -40px;
+        left: 0px;
+        font-size: 0.6em;
+    }
+}
+@media (400px <= width <= 700px){
+    section{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        }
+    nav img {
+        width: 45px;
+        position: absolute;
+        top: 45px;
+        left: 40px;
+    }    
+    .nav-links {
+        display: none;
+    }
+    .menu{
+        color:white;
+        list-style: none;
+        display: none;
+        position: absolute;
+        height: 50vh;
+        width: 250px;
+        z-index: 1;
+    }
+    .menu li a{
+        padding:10px;
+        font-size: 20px;
+    }
+    .nav-links .fa-solid{
+        display: block;
+    }
+    .text-box{
+        font-family: 'Nexa';
+        
+        top:30%;
+        left: 13%;
+        
+    }
+    .text-box p{
+        font-size: 30px;
+
+    }
+    .text-box p2{
+        font-size: 11px;
+    }
+    .box{
+        position: relative;
+        width: 240px;
+        height: 165px;
+        top: 5%;
+        left: -7%;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .box-input1{
+        position: relative;
+        left: 0px;
+        top: 14px;
+        width: 200px;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input1 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input1 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    .box-input2{
+        position: relative;
+        left: 0px;
+        top: -5px;
+        width: 200px;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input2 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input2 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    .box-input3{
+        position: relative;
+        left: 0px;
+        top: -25px;
+        width: 200px;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input3 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input3 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    button{
+        width: 100%;
+        height: 30px;
+        border: 0.5px solid white;
+        position: relative;
+        top: -40px;
+        left: 0px;
+        font-size: 0.6em;
+    }
+}
+/*@media only screen and (max-width:700px){
+    nav img {
+        width: 60px;
+        position: absolute;
+        top: 45px;
+        left: 70px;
+    }    
+    .nav-links {
+        left: 50%;
+        top: 9%;
+    }
+    .nav-links ul li a{
+        font-size: 11px;;
+    }
+    .menu{
+        color:white;
+        list-style: none;
+        display: none;
+        position: absolute;
+        height: 50vh;
+        width: 250px;
+        z-index: 1;
+    }
+    .menu li a{
+        padding:10px;
+        font-size: 20px;
+    }
+    .fa-solid{
+        display: block;
+    }
+    .text-box{
+        top:30%;
+        left: 30%;
+    }
+    .box{
+        position: absolute;
+        width: 350px;
+        height: 130px;
+        top: 43%;
+        left: 26.5%;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    button{
+        width: 50%;
+        height: 32px;
+        border-radius: 5px;
+        border: 0.5px solid white;
+        position: relative;
+        top: -70px;
+        left: 155px;
+        font-size: 0.7em;
+    }
+    .box-input1{
+        position: relative;
+        left: -60px;
+        top: 35px;
+        width: 150px;
+        font-size: 1em;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input1 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.8em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input1 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    .box-input2{
+        position: relative;
+        left: 110px;
+        top:-15.5px;
+        width: 150px;
+        font-size: 1.15em;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input2 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input2 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    .box-input3{
+        position: relative;
+        left: -60px;
+        top: -15px;
+        width: 200px;
+        font-size: 1.15em;
+        border-bottom: 0.5px solid white;
+    }
+    .box-input3 input{
+        width: 140px;
+        height: 20px;
+        font-size: 0.7em;
+        padding: 0 35px 0 5px;
+    }
+    .box-input3 ion-icon{
+        position: absolute;
+        right:8px;
+        color:white;
+        font-size: 0.9em;
+        top:0px;
+    }
+    .text-box p{
+        font-size: 40px;
+    }
+    .text-box p2{
+        font-size: 14px;
+    }
+}
