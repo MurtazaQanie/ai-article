@@ -110,7 +110,7 @@ nav img {
     position: relative;
     top: 130px;
     left: 17%;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2.5px);
     
 }
 .members{
