@@ -1,0 +1,1292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Noir', sans-serif;
+    font-family: 'Nexa', sans-serif;
+                                                
+}
+body{
+    background: black;
+}
+.header{
+    min-height: 115vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.2)),url(n3.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 3% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+
+nav img {
+  width: 75px;
+  position: relative;
+  top: -40px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  position:absolute;
+  top: 7%;
+  left: 70%;
+  transition: left 0.4s ease-in-out;
+}
+
+.search-box:hover ~ .nav-links {
+  left: 75%;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 7px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    font-family: 'Noir', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13.5px;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #DADBDD;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.ab-us{
+    color:white;
+    text-align: center;
+    position: relative;
+    top: 290px;
+    left: -5%;
+    width: 100%;
+}
+.ab-us h1{
+    font-size: 40px;
+    position: relative;
+    top: -20px;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 120px white, 0 0 150px white, 0 0 180px white;
+}
+.ab-us p{
+    width: 80%;
+    position: relative;
+    top: 10px;
+    left: 9%;
+    font-size: 15px;
+    
+}
+.mission{
+    height: 115vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.2)),url(n8.png);
+    background-size: cover;
+    position: relative;
+}
+.mission h1{
+    font-size: 40px;
+    position: relative;
+    top: 150px;
+    left: 60px;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 120px white, 0 0 150px white;
+}
+.mission p{
+    width: 68%;
+    position: relative;
+    font-size: 15px;
+    top: 180px;
+    left: 20%;
+    backdrop-filter: blur(1px);
+    border-radius: 42px;
+    
+}
+.members{
+    height: 115vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2,6,25,0.2),rgba(2,6,25,0.2)),url(ab4.png);
+    background-size: cover;
+    position: relative;
+}
+.members h1{
+    font-size: 40px;
+    position: relative;
+    top:10px;
+    left: 30px;
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 120px white;
+    
+}
+
+.murtaza{
+    position: relative;
+    top: 355px;
+    left: 150px;
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    font-size: 15.4px;
+    border-radius: 9px;
+    backdrop-filter: blur(3px);
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 34px;
+    background: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: border 0.9s, background 0.9s, color 0.9s;
+}
+
+.murtaza:hover {
+    border: 0.5px solid #DADBDD;
+    background: #DADBDD;
+    color: black;
+}
+.murtaza h2{
+    position: relative;
+    left: 20px;
+    top: 25px;
+    font-size: 20px;
+}
+.murtaza p{
+    position: relative;
+    left: 17px;
+    padding: 3px;
+    top: 30px;
+    font-size: 15px;
+}
+.sahar{
+    position: relative;
+    top: 130px;
+    left: 38%;
+    width: 20%;
+    backdrop-filter: blur(3px);
+    height: 200px;
+    display: inline-block;
+    font-size: 15.4px;
+    border-radius: 9px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 34px;
+    background: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: border 0.9s, background 0.9s, color 0.9s;
+}
+
+.sahar:hover {
+    border: 0.5px solid #DADBDD;
+    background: #DADBDD;
+    color: black;
+}
+.sahar h3{
+    position: relative;
+    left: 20px;
+    top: 25px;
+    font-size: 20px;
+}
+.sahar p{
+    position: relative;
+    left: 17px;
+    padding: 3px;
+    top: 30px;
+    font-size: 15px;
+}
+
+.fatima{
+    position: relative;
+    top: -95px;
+    left: 65%;
+    width: 20%;
+    backdrop-filter: blur(3px);
+    height: 200px;
+    display: inline-block;
+    font-size: 15.4px;
+    border-radius: 9px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 34px;
+    background: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: border 0.9s, background 0.9s, color 0.9s;
+}
+
+.fatima:hover {
+    border: 0.5px solid #DADBDD;
+    background: #DADBDD;
+    color: black;
+}
+.fatima h3{
+    position: relative;
+    left: 20px;
+    top: 25px;
+    font-size: 20px;
+}
+.fatima p{
+    position: relative;
+    left: 17px;
+    padding: 3px;
+    top: 30px;
+    font-size: 15px;
+}
+
+
+/*---footer---*/
+.footer{
+    width: 100%;
+    top: 0px;
+    height: 60vh;
+    position: relative; 
+    overflow: hidden;
+    position: relative;
+}
+.footer .imagexr{
+    position: relative;
+    left:4.5%;
+    top: 130px;
+    width: 70px;
+    height: 35px;}
+.footer .imagexr img{
+    z-index: 111;
+    position: relative;
+    top: 40%;
+    left:20%;
+    width: 140%;
+    height: 140%; 
+}
+.text-box7{
+    color:white;
+    text-align: left;
+    font-family: 'Nexa';
+    position: relative;
+    left: 13%;
+    top: 110px;
+    width: 390px;
+   
+}
+.text-box7 h7{
+    font-size: 13.5px;
+    font-family: 'Nexa';
+    color:lightgrey
+
+}
+.media{
+    list-style: none;
+    display: flex;
+    margin: 0rem 0 0rem 0;
+    align-items: left;
+    justify-content: left;
+    position: relative;
+    left: -30%;
+    top: 75px;
+}
+.media li{
+    margin: 0 12px;
+    cursor: pointer;
+}
+.media a{
+    text-decoration: none;
+    color: white;
+}
+.media a i{
+    font-size: 27px;
+    transform: color 0.6s ease;
+}
+.media a:hover i{
+    color: #56B7F5;
+    opacity: 90%;
+    transition: 0.4s;
+}
+.bottom-footer{
+    color: lightgray;
+    position: relative;
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+
+}
+.email-box {
+    position: absolute;
+    top: 220px;
+    right: 74.5%;
+    transform: translate(-3%, 10%);
+    background: rgba(225,225,225,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 30px;
+    z-index: 111;
+    border-radius: 10px;
+    object-fit: cover;
+    width:20%;
+    
+  }
+  .email-btn {
+    color: white;
+    float: right;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+  
+  .email-txt {
+    border: none;
+    background: transparent;
+    outline: none;
+    float: left;
+    position: center;
+    padding: 0;
+    color: white;
+    font-size: 14px;
+    transition: 0.4s;
+    line-height: 35px;
+    width: 100%;
+  }
+  .contact{
+    color:white;
+    position: relative;
+    left: 55%;
+    top:-150px;
+    text-align: left;
+    align-items: left;
+    list-style: none;
+    overflow: hidden;
+}
+.contact a{
+    text-decoration: none;
+    font-size: 16px;
+    color:white;
+    position: relative;
+    top:5px;
+    cursor: pointer;
+}
+.contact li{
+    cursor:pointer;
+    width:fit-content;
+}
+.contact li a{
+    transform: color 0.3s ease;
+    cursor: pointer;
+    color:gray;
+    font-size: 13px;
+}
+.contact li a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.sections{
+    color:white;
+    position: relative;
+    left: 65%;
+    top:0px;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+}
+.sections h10 a{
+    font-size: 16px;
+    color: white;
+    z-index: 1;
+}
+.sections a{
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    top:5px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: left;
+    z-index: 2;
+}
+.sections li{
+    cursor:pointer;
+
+}
+.sectoins li a{
+    transform: color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+.sections li a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.submission{
+    color:white;
+    position: relative;
+    left: 75.5%;
+    top:-210px;
+    text-align: left;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.submission a{
+    text-decoration: none;
+
+    position: relative;
+    font-size: 16px;
+    color: white;
+    top:5px;
+    cursor: pointer;
+}
+.submission li{
+    cursor:pointer;
+    width:fit-content;
+}
+.submission li a{
+    transform: color 0.3s ease;
+    cursor: pointer;
+    color: gray;
+    font-size: 13px;
+}
+.submission li a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.about{
+    color:white;
+    position: relative;
+    left: 88%;
+    top:-290px;
+    text-align: left;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.about a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top:5px;
+}
+.about li{
+    width:fit-content;
+    cursor: pointer;
+}
+.about li a{
+    transform: color 0.3s ease;
+    color:gray;
+    font-size:13px;
+}
+.about li a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+nav .fa-solid{
+    display: none;
+}
+.bottom-footer{
+    top:280px;
+}
+
+
+/*---Phone---*/
+@media (min-width: 300px) and (max-width: 500px) {
+    .header{
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .nav-links ul li{
+        display: block; 
+        left: -20px; 
+        top: -10px;
+
+    }
+    .nav-links ul li:hover:after{
+        display: none;
+    }
+    .nav-links{
+        position: absolute;
+        height: 105vh;
+        opacity: 0%;
+        width: 100%;
+        left: 0px;
+        top:-10px;
+        text-align: center;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 12px;
+        font-family: 'Nexa';
+        z-index:2;
+        font-weight: 800;
+        transition: 0.5s
+    }
+    nav .fa-solid.fa-bars{
+        display: block;
+        z-index: 3;
+        font-size: 25px;
+        margin: 10px;
+        position: absolute;
+        top: 5%;
+        left: 77%;
+        color:white;
+        cursor: pointer;
+        z-index: 2;
+    }
+    nav .fa-solid.fa-xmark{
+        display: block;
+        font-size: 25px;
+        margin: 10px;
+        position: relative;
+        top: 45px;
+        left: 20%;
+        color:white;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    
+    .nav-links li a{
+        position: relative;
+        top:200px;
+        left:5%;
+    }
+    nav img{
+        height: 30px;
+        width: 60px;
+        position: absolute;
+        top: 6%;
+        left: 13%;
+    }
+    .ab-us{
+        top:210px;
+        left: -5%;
+        width: 90%;
+        align-items: center;
+        align-content: center;
+    }
+    .ab-us h1{
+        font-size: 30px;
+    }
+    .ab-us p{
+        font-size: 11.5px;
+        left: -20px;
+        width: 115%;
+    }
+    .mission{
+        top:-40px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    .mission .ab-us h1{
+        font-size: 30px;
+        top: 85px;
+        left: 35px;
+    }
+    .mission .ab-us p{
+        font-size: 11.5px;
+        left: 35px;
+        top: 120px;
+        width: 100%;
+    }
+
+    .members{
+        height: 110vh;
+
+    }
+    .members .ab-us{
+        top:50px;
+        left: -10px;
+        width: 90%;
+        align-items: center;
+        align-content: center;
+    }
+    .members .murtaza{
+        top:14%;
+        position: absolute;
+        width: 55%;
+        backdrop-filter: none;
+        left: 7%;
+    }
+    .members .murtaza h2{
+        font-size: 14px;
+    }
+    .members .murtaza p{
+        font-size: 11px;
+    }
+    .members .sahar{
+        top:34%;
+        backdrop-filter: none;
+        position: absolute;
+        width: 55%;
+        left: 7%;
+    }
+    .members .sahar h3{
+        font-size: 14px;
+    }
+    .members .sahar p{
+        font-size: 11px;
+    }
+    .members .fatima{
+        top:51%;
+        position: absolute;
+        backdrop-filter: blur(1px);
+        width: 55%;
+        left: 7%;
+    }
+    .members .fatima h3{
+        font-size: 14px;
+    }
+    .members .fatima p{
+        font-size: 11px;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer .imagexr{
+        height: 30px;
+        top:-5px;
+        width: 60px;
+    }
+    .footer .text-box7{
+        top:-29px;
+        left: 120px;
+        width: 60%;
+        line-height:12px;
+        
+    }
+    .footer .text-box7 h7{
+        font-size: 11px;
+
+    }
+    .email-box{
+        display: none;
+    }
+    .footer .contact{
+        left: 18px;
+        cursor: pointer;
+        border:1px solid rgb(76,76,76);
+        height: 18px;
+        backdrop-filter: blur(12px);
+        background: rgba(255,255,255,0.1);
+        width: 89%;
+        border-radius: 4px;
+        top: -50px;
+        font-size: 15.5px;
+        overflow-x: hidden;
+    }
+    .footer .contact li a{
+        display: none;
+    }
+    .footer .contact h9 a{
+        color: white;
+        left: 46%;
+        top:0;
+        position: relative;
+        font-size: 14px;
+    }
+    .footer .sections{
+        cursor: pointer;
+        border: 1px solid rgb(76,76,76);
+        height: 18px;
+        position: relative;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(12px);
+        width: 89%;
+        left: 19px;
+        border-radius: 4px;
+        font-size: 12px;
+        top:0px;
+        overflow-x: hidden;
+    }
+    .footer .sections h10 a{
+        left: 44%;
+        color:white;
+        position: relative;
+        font-size: 14px;
+        top:0;
+    }
+    .footer .sections li a {
+        display: none;
+    }
+    .footer .submission{
+        left: 18px;
+        cursor: pointer;
+        border:1px solid rgb(76,76,76);
+        height: 18px;
+        backdrop-filter: blur(12px);
+        background: rgba(255,255,255,0.1);
+        width: 89%;
+        border-radius: 4px;
+        top: -10px;
+        font-size: 15.5px;
+        overflow-x: hidden;
+    }
+    .footer .submission h11 a{
+        left: 41%;
+        font-size: 14px;
+        position: relative;
+        top:0;
+        color:white;
+    }
+    .footer .submission li a{
+        display: none;
+    }
+    .footer .about{
+        left: 17px;
+        top: 0px;
+        cursor: pointer;
+        border:1px solid rgb(76,76,76);
+        height: 18px;
+        width: 89%;
+        border-radius: 4px;
+        font-size: 15.5px;
+        backdrop-filter: blur(12px);
+        background:rgba(255,255,255,0.1);
+        overflow-x: hidden;
+    }
+    .footer .about h11 a{
+        font-size: 14px;
+        position: relative;
+        left: 45%;
+        color: white;
+        top: 0;
+    }
+    .footer .about li a{
+        display: none;
+    }
+    .media{
+        position:absolute;
+        top:210px;
+        left:-25%;
+    }
+    html, .sec2, .sec3, .sec4, .p5
+    {
+        width: 100%;
+        margin: 0px;
+        padding:0px;
+        overflow-x: hidden;
+    }
+    .sec2, .sec3,.sec4{
+        overflow-y: hidden;
+    }
+    .bottom-footer{
+        top:200px;
+    }
+}
+
+
+
+@media (501px <= width <= 768px){
+        .header{
+            width: 100%;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .nav-links ul li{
+            display: block; 
+            left: -20px; 
+            top: -10px;
+    
+        }
+        .nav-links ul li:hover:after{
+            display: none;
+        }
+        .nav-links{
+            position: absolute;
+            height: 105vh;
+            opacity: 0%;
+            width: 100%;
+            left: 0px;
+            top:-10px;
+            text-align: center;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 12px;
+            font-family: 'Nexa';
+            z-index:2;
+            font-weight: 800;
+            transition: 0.5s
+        }
+        nav .fa-solid.fa-bars{
+            display: block;
+            z-index: 3;
+            font-size: 25px;
+            margin: 10px;
+            position: absolute;
+            top: 5%;
+            left: 82%;
+            color:white;
+            cursor: pointer;
+            z-index: 2;
+        }
+        nav .fa-solid.fa-xmark{
+            display: block;
+            font-size: 25px;
+            margin: 10px;
+            position: relative;
+            top: 40px;
+            left: 25%;
+            color:white;
+            cursor: pointer;
+            z-index: 2;
+        }
+    
+        
+        .nav-links li a{
+            position: relative;
+            top:200px;
+            left:5%;
+        }
+        nav img{
+            height: 30px;
+            width: 60px;
+            position: absolute;
+            top: 6%;
+            left: 10%;
+        }
+        .ab-us{
+            top:210px;
+            left: -6%;
+            width: 90%;
+            align-items: center;
+            align-content: center;
+        }
+        .ab-us h1{
+            font-size: 30px;
+        }
+        .ab-us p{
+            font-size: 11.5px;
+            left: -35px;
+            width: 115%;
+        }
+        .mission{
+            top:-40px;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            align-content: center;
+        }
+        .mission .ab-us h1{
+            font-size: 30px;
+            top: 100px;
+            left: 13%;
+        }
+        .mission .ab-us p{
+            font-size: 11.5px;
+            left: 13%;
+            top: 130px;
+            width: 100%;
+        }
+    
+        .members{
+            height: 110vh;
+            overflow-x: hidden;
+    
+        }
+        .members .ab-us{
+            top:110px;
+            left: -10px;
+            width: 90%;
+            align-items: center;
+            align-content: center;
+        }
+        .members .murtaza{
+            top:30%;
+            position: absolute;
+            width: 55%;
+            backdrop-filter: none;
+            left: 7%;
+        }
+        .members .murtaza h2{
+            font-size: 14px;
+        }
+        .members .murtaza p{
+            font-size: 11px;
+        }
+        .members .sahar{
+            top:30%;
+            backdrop-filter: none;
+            position: absolute;
+            width: 50%;
+            z-index: 2;
+            left: 50%;
+        }
+        .members .sahar h3{
+            font-size: 14px;
+            width: 40%;
+            overflow: hidden;
+        }
+        .members .sahar p{
+            font-size: 11px;
+            width: 60%;
+            overflow: hidden;
+        }
+        .members .fatima{
+            top:51%;
+            position: absolute;
+            backdrop-filter: blur(1px);
+            width: 55%;
+            left: 7%;
+            z-index: 1;
+        }
+        .members .fatima h3{
+            font-size: 14px;
+        }
+        .members .fatima p{
+            font-size: 11px;
+        }
+        .footer{
+            width: 100%;
+        }
+        .footer .imagexr{
+            height: 30px;
+            top:-5px;
+            width: 60px;
+        }
+        .footer .text-box7{
+            top:-20px;
+            left: 135px;
+            width: 45%;
+            line-height:12px;
+            
+        }
+        .footer .text-box7 h7{
+            font-size: 11px;
+    
+        }
+        .email-box{
+            display: none;
+        }
+        .footer .contact{
+            left: 18px;
+            cursor: pointer;
+            border:1px solid rgb(76,76,76);
+            height: 18px;
+            backdrop-filter: blur(12px);
+            background: rgba(255,255,255,0.1);
+            width: 89%;
+            border-radius: 4px;
+            top: -40px;
+            font-size: 15.5px;
+            overflow-x: hidden;
+        }
+        .footer .contact li a{
+            display: none;
+        }
+        .footer .contact h9 a{
+            color: white;
+            left: 46%;
+            top:0;
+            position: relative;
+            font-size: 14px;
+        }
+        .footer .sections{
+            cursor: pointer;
+            border: 1px solid rgb(76,76,76);
+            height: 18px;
+            position: relative;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(12px);
+            width: 89%;
+            left: 19px;
+            border-radius: 4px;
+            font-size: 12px;
+            top:  10px;
+            overflow-x: hidden;
+        }
+        .footer .sections h10 a{
+            left: 44%;
+            color:white;
+            position: relative;
+            font-size: 14px;
+            top:0;
+        }
+        .footer .sections li a {
+            display: none;
+        }
+        .footer .submission{
+            left: 18px;
+            cursor: pointer;
+            border:1px solid rgb(76,76,76);
+            height: 18px;
+            backdrop-filter: blur(12px);
+            background: rgba(255,255,255,0.1);
+            width: 89%;
+            border-radius: 4px;
+            top: 0px;
+            font-size: 15.5px;
+            overflow-x: hidden;
+        }
+        .footer .submission h11 a{
+            left: 41%;
+            font-size: 14px;
+            position: relative;
+            top:0;
+            color:white;
+        }
+        .footer .submission li a{
+            display: none;
+        }
+        .footer .about{
+            left: 17px;
+            top: 10px;
+            cursor: pointer;
+            border:1px solid rgb(76,76,76);
+            height: 18px;
+            width: 89%;
+
+            border-radius: 4px;
+            font-size: 15.5px;
+            backdrop-filter: blur(12px);
+            background:rgba(255,255,255,0.1);
+            overflow-x: hidden;
+        }
+        .footer .about h11 a{
+            font-size: 14px;
+            position: relative;
+            left: 45%;
+            color: white;
+            top: 0;
+        }
+        .footer .about li a{
+            display: none;
+        }
+        .media{
+            position:absolute;
+            top:210px;
+            left:10%;
+        }
+        html, .sec2, .sec3, .sec4, .p5
+        {
+            width: 100%;
+            margin: 0px;
+            padding:0px;
+            overflow-x: hidden;
+        }
+        .sec2, .sec3,.sec4{
+            overflow-y: hidden;
+        }
+        .bottom-footer{
+            top:200px;
+        }
+    
+}
+
+@media (769px <= width <= 900px){
+    .header{
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
+    nav .nav-links{
+        display: block;
+        left: 50%;
+        top: 50px;
+    }
+    nav .nav-links li a{
+        font-size: 12px;
+    }
+    nav img{
+        height: 30px;
+        width: 60px;
+        position: absolute;
+        top: 6%;
+        left: 10%;
+    }
+    .ab-us{
+        top:210px;
+        left: -15%;
+        width: 75%;
+        align-items: center;
+        align-content: center;
+    }
+    .ab-us h1{
+        font-size: 35px;
+        left: 20px;
+    }
+    .ab-us p{
+        font-size: 12px;
+        left: -35px;
+        width: 115%;
+    }
+    .mission{
+        top:-40px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    .mission .ab-us h1{
+        font-size: 35px;
+        top: 100px;
+        left: 40%;
+    }
+    .mission .ab-us p{
+        font-size: 12px;
+        left: 37%;
+        top: 130px;
+        width: 100%;
+    }
+
+    .members{
+        height: 110vh;
+        overflow-x: hidden;
+
+    }
+    .members .ab-us{
+        top:160px;
+        left: 4%;
+        font-size: 35px;
+        width: 90%;
+        align-items: center;
+        align-content: center;
+    }
+    .members .murtaza{
+        top:40%;
+        position: absolute;
+        width: 55%;
+        backdrop-filter: none;
+        left: 7%;
+    }
+    .members .murtaza h2{
+        font-size: 14px;
+    }
+    .members .murtaza p{
+        font-size: 11px;
+    }
+    .members .sahar{
+        top:39.9%;
+        backdrop-filter: none;
+        position: absolute;
+        width: 50%;
+        z-index: 2;
+        left: 35%;
+    }
+    .members .sahar h3{
+        font-size: 14px;
+        width: 40%;
+        overflow: hidden;
+    }
+    .members .sahar p{
+        font-size: 11px;
+        width: 60%;
+        overflow: hidden;
+    }
+    .members .fatima{
+        top:39%;
+        position: absolute;
+        backdrop-filter: blur(1px);
+        width: 55%;
+        left: 60%;
+        z-index: 1;
+    }
+    .members .fatima h3{
+        font-size: 14px;
+    }
+    .members .fatima p{
+        font-size: 11px;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer .imagexr{
+        height: 30px;
+        top:-5px;
+        width: 60px;
+    }
+    .footer .text-box7{
+        top:-20px;
+        left: 145px;
+        width: 35%;
+        line-height:12px;
+        
+    }
+    .footer .text-box7 h7{
+        font-size: 11px;
+
+    }
+    .email-box{
+        top: 20%;
+        left: 6%;
+        width:40%;
+
+    }
+    .footer .contact{
+        left: 56%;
+        top:-70%;
+
+    }
+    .footer .contact li a{
+        font-size: 11px;
+    }
+    .footer .contact h9 a{
+        color:white;
+        font-size: 14px;
+
+    }
+    .footer .sections{
+        top:0%;
+        left: 56%;
+
+    }
+    .footer .sections h10 a{
+        font-size: 13px;
+        color: white;
+
+    }
+    .footer .sections li a {
+        font-size: 11px;
+
+    }
+    .footer .submission{
+        top: -88%;
+
+    }
+    .footer .submission h11 a{
+        font-size: 14px;
+        color:white;
+
+    }
+    .footer .submission li a{
+        font-size: 11px;
+    }
+    .footer .about{
+        top: -84%;
+        left: 75%;
+    }
+    .footer .about h11 a{
+        color: white;
+        font-size: 14px;
+    }
+    .footer .about li a{
+        font-size: 11px;
+    }
+    .media{
+        position:absolute;
+        top:300%;
+        left:-40%;
+    }
+    .bottom-footer{
+        top:200px;
+    }
+}
